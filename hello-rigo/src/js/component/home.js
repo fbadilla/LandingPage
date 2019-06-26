@@ -14,6 +14,8 @@ export class Home extends React.Component {
 				<Navbar />
 				<div className="container">
 					<Header />
+                    <Card/>
+
 				</div>
 			</div>
 		);
