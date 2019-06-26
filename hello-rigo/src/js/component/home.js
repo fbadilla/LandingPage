@@ -4,7 +4,8 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import { Navbar } from "./navbar.js";
 import { Header } from "./header.js";
-import { card } from "./card.js";
+import { Card } from "./card.js";
+import { Footer } from "./footer.js";
 
 //create your first component
 export class Home extends React.Component {
@@ -14,9 +15,22 @@ export class Home extends React.Component {
 				<Navbar />
 				<div className="container">
 					<Header />
-                    <Card/>
-
+					<div className="row">
+						<div className="col-3">
+							<Card />
+						</div>
+						<div className="col-3">
+							<Card />
+						</div>
+						<div className="col-3">
+							<Card />
+						</div>
+						<div className="col-3">
+							<Card />
+						</div>
+					</div>
 				</div>
+				<Footer />
 			</div>
 		);
 	}
